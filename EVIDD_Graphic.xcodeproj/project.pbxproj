@@ -10,6 +10,16 @@
 		8323FEC1275331FC0011BFFF /* EVIDD_Graphic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8323FEB8275331FC0011BFFF /* EVIDD_Graphic.framework */; };
 		8323FEC6275331FC0011BFFF /* EVIDD_GraphicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8323FEC5275331FC0011BFFF /* EVIDD_GraphicTests.swift */; };
 		8323FEC7275331FC0011BFFF /* EVIDD_Graphic.h in Headers */ = {isa = PBXBuildFile; fileRef = 8323FEBB275331FC0011BFFF /* EVIDD_Graphic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8323FED7275333130011BFFF /* BarChartPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8323FED6275333130011BFFF /* BarChartPlot.swift */; };
+		8323FED8275333130011BFFF /* BarChartPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8323FED6275333130011BFFF /* BarChartPlot.swift */; };
+		8323FEDA2753335C0011BFFF /* LineChartPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8323FED92753335C0011BFFF /* LineChartPath.swift */; };
+		8323FEDB2753335C0011BFFF /* LineChartPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8323FED92753335C0011BFFF /* LineChartPath.swift */; };
+		8323FEDD275333880011BFFF /* PieChartPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8323FEDC275333880011BFFF /* PieChartPlot.swift */; };
+		8323FEDE275333880011BFFF /* PieChartPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8323FEDC275333880011BFFF /* PieChartPlot.swift */; };
+		8323FEE0275333BD0011BFFF /* BasicChartGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8323FEDF275333BD0011BFFF /* BasicChartGrid.swift */; };
+		8323FEE1275333BD0011BFFF /* BasicChartGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8323FEDF275333BD0011BFFF /* BasicChartGrid.swift */; };
+		8323FEE3275334050011BFFF /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8323FEE2275334050011BFFF /* TestView.swift */; };
+		8323FEE4275334050011BFFF /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8323FEE2275334050011BFFF /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +37,11 @@
 		8323FEBB275331FC0011BFFF /* EVIDD_Graphic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EVIDD_Graphic.h; sourceTree = "<group>"; };
 		8323FEC0275331FC0011BFFF /* EVIDD_GraphicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EVIDD_GraphicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8323FEC5275331FC0011BFFF /* EVIDD_GraphicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EVIDD_GraphicTests.swift; sourceTree = "<group>"; };
+		8323FED6275333130011BFFF /* BarChartPlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartPlot.swift; sourceTree = "<group>"; };
+		8323FED92753335C0011BFFF /* LineChartPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartPath.swift; sourceTree = "<group>"; };
+		8323FEDC275333880011BFFF /* PieChartPlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartPlot.swift; sourceTree = "<group>"; };
+		8323FEDF275333BD0011BFFF /* BasicChartGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicChartGrid.swift; sourceTree = "<group>"; };
+		8323FEE2275334050011BFFF /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +84,9 @@
 		8323FEBA275331FC0011BFFF /* EVIDD_Graphic */ = {
 			isa = PBXGroup;
 			children = (
+				8323FED0275332070011BFFF /* Layers */,
 				8323FEBB275331FC0011BFFF /* EVIDD_Graphic.h */,
+				8323FEE2275334050011BFFF /* TestView.swift */,
 			);
 			path = EVIDD_Graphic;
 			sourceTree = "<group>";
@@ -80,6 +97,33 @@
 				8323FEC5275331FC0011BFFF /* EVIDD_GraphicTests.swift */,
 			);
 			path = EVIDD_GraphicTests;
+			sourceTree = "<group>";
+		};
+		8323FED0275332070011BFFF /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				8323FED22753322D0011BFFF /* ChartElements */,
+				8323FED1275332180011BFFF /* ChartGrid */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		8323FED1275332180011BFFF /* ChartGrid */ = {
+			isa = PBXGroup;
+			children = (
+				8323FEDF275333BD0011BFFF /* BasicChartGrid.swift */,
+			);
+			path = ChartGrid;
+			sourceTree = "<group>";
+		};
+		8323FED22753322D0011BFFF /* ChartElements */ = {
+			isa = PBXGroup;
+			children = (
+				8323FED6275333130011BFFF /* BarChartPlot.swift */,
+				8323FED92753335C0011BFFF /* LineChartPath.swift */,
+				8323FEDC275333880011BFFF /* PieChartPlot.swift */,
+			);
+			path = ChartElements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +188,7 @@
 				TargetAttributes = {
 					8323FEB7275331FC0011BFFF = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 					8323FEBF275331FC0011BFFF = {
 						CreatedOnToolsVersion = 13.0;
@@ -191,6 +236,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8323FED7275333130011BFFF /* BarChartPlot.swift in Sources */,
+				8323FEE3275334050011BFFF /* TestView.swift in Sources */,
+				8323FEE0275333BD0011BFFF /* BasicChartGrid.swift in Sources */,
+				8323FEDA2753335C0011BFFF /* LineChartPath.swift in Sources */,
+				8323FEDD275333880011BFFF /* PieChartPlot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8323FEE4275334050011BFFF /* TestView.swift in Sources */,
+				8323FEDE275333880011BFFF /* PieChartPlot.swift in Sources */,
 				8323FEC6275331FC0011BFFF /* EVIDD_GraphicTests.swift in Sources */,
+				8323FED8275333130011BFFF /* BarChartPlot.swift in Sources */,
+				8323FEE1275333BD0011BFFF /* BasicChartGrid.swift in Sources */,
+				8323FEDB2753335C0011BFFF /* LineChartPath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +393,7 @@
 		8323FECB275331FC0011BFFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -358,6 +414,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +423,7 @@
 		8323FECC275331FC0011BFFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -394,6 +452,7 @@
 		8323FECE275331FC0011BFFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YB49647NR2;
@@ -415,6 +474,7 @@
 		8323FECF275331FC0011BFFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YB49647NR2;
